@@ -1,0 +1,91 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="50%" stop-color="#0f2438"/>
+      <stop offset="100%" stop-color="#081420"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3fd8e0"/>
+      <stop offset="55%" stop-color="#1a8fb8"/>
+      <stop offset="100%" stop-color="#0d5f82"/>
+    </linearGradient>
+    <linearGradient id="shieldInner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d3a52" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0a2436" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3fd8e0" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3fd8e0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#bfeef2"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- circuitry lines background -->
+  <g stroke="#1c4e66" stroke-width="1.5" opacity="0.5" fill="none">
+    <path d="M0 60 H180 V100 H340"/>
+    <path d="M0 300 H140 V260 H300 V220"/>
+    <path d="M900 30 V80 H1050 V40"/>
+    <path d="M1000 320 V270 H1160 V300 H1200"/>
+    <path d="M60 180 H0"/>
+    <path d="M1140 150 H1200"/>
+  </g>
+  <g fill="#2a6f8f" opacity="0.6">
+    <circle cx="180" cy="60" r="3"/>
+    <circle cx="340" cy="100" r="3"/>
+    <circle cx="300" cy="220" r="3"/>
+    <circle cx="1050" cy="40" r="3"/>
+    <circle cx="1160" cy="300" r="3"/>
+    <circle cx="60" cy="180" r="3"/>
+  </g>
+
+  <!-- glow behind shield -->
+  <circle cx="970" cy="185" r="200" fill="url(#glow)"/>
+
+  <!-- large shield emblem on right -->
+  <g transform="translate(930,175)">
+    <path d="M0 -110 L95 -75 L95 20 C95 90 45 130 0 150 C-45 130 -95 90 -95 20 L-95 -75 Z" fill="url(#shieldGrad)" opacity="0.95"/>
+    <path d="M0 -85 L72 -57 L72 18 C72 72 35 102 0 118 C-35 102 -72 72 -72 18 L-72 -57 Z" fill="url(#shieldInner)"/>
+    <path d="M-38 8 L-14 32 L42 -30" fill="none" stroke="#8ff0f5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- orbiting nodes / lock accents -->
+  <g fill="none" stroke="#3fd8e0" stroke-width="1.2" opacity="0.5">
+    <circle cx="970" cy="185" r="150"/>
+    <circle cx="970" cy="185" r="175"/>
+  </g>
+  <g fill="#3fd8e0" opacity="0.8">
+    <circle cx="1120" cy="185" r="4"/>
+    <circle cx="820" cy="185" r="4"/>
+    <circle cx="970" cy="10" r="4"/>
+  </g>
+
+  <!-- small padlock decoration bottom left -->
+  <g transform="translate(110,285)" opacity="0.85">
+    <rect x="-16" y="0" width="32" height="26" rx="4" fill="#1a8fb8"/>
+    <path d="M-10 0 V-12 A10 10 0 0 1 10 -12 V0" fill="none" stroke="#3fd8e0" stroke-width="5"/>
+    <circle cx="0" cy="13" r="3.5" fill="#0a2436"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="52" fill="url(#headText)">
+    <tspan x="60" dy="0" textLength="820" lengthAdjust="spacingAndGlyphs">Malwarebytes Premium</tspan>
+    <tspan x="60" dy="64" textLength="560" lengthAdjust="spacingAndGlyphs">Full Version Download</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="62" y="252" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#9fd9e0" textLength="820" lengthAdjust="spacingAndGlyphs">
+    Delivers a pluggable full-version downloader for the
+  </text>
+  <text x="62" y="282" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#9fd9e0" textLength="360" lengthAdjust="spacingAndGlyphs">
+    Malwarebytes Premium ecosystem
+  </text>
+
+  <!-- thin accent bar -->
+  <rect x="60" y="90" width="70" height="6" rx="3" fill="#3fd8e0"/>
+</svg>
